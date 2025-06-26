@@ -4,19 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Users, Heart } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-
-interface Event {
-  id: number
-  title: string
-  description: string
-  date: string
-  location: string
-  category: string
-  price: number
-  image: string
-  attendees: number
-  isFavorite?: boolean
-}
+import { Event } from "@/types/event"
 
 interface EventCardProps {
   event: Event

@@ -12,7 +12,7 @@ interface Message {
 
 export function useChat() {
   const [messages, setMessages] = useState<Message[]>([])
-  const [isConnected, setIsConnected] = useState(true)
+  const [isConnected] = useState(true)
 
   const sendMessage = useCallback((content: string) => {
     const newMessage: Message = {

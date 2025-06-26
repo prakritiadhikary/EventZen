@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect, createContext } from "react"
+import { useState, useEffect } from "react"
 
 interface User {
   id: string
@@ -9,16 +9,7 @@ interface User {
   avatar?: string
 }
 
-interface AuthContextType {
-  user: User | null
-  login: (email: string, password: string) => Promise<void>
-  signup: (name: string, email: string, password: string) => Promise<void>
-  logout: () => void
-  isLoading: boolean
-  isAuthenticated: boolean
-}
-
-const AuthContext = createContext<AuthContextType | undefined>(undefined)
+// Removed unused AuthContextType interface
 
 export function useAuth() {
   const [user, setUser] = useState<User | null>(null)
@@ -29,6 +20,9 @@ export function useAuth() {
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000))
+
+      // In a real app, you would validate the password here
+      console.log("Login attempt with password:", password)
 
       const mockUser: User = {
         id: "1",
@@ -52,6 +46,9 @@ export function useAuth() {
     try {
       // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1000))
+
+      // In a real app, you would hash and store the password here
+      console.log("Signup attempt with password:", password)
 
       const mockUser: User = {
         id: "1",

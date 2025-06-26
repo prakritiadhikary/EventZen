@@ -12,7 +12,6 @@ import { useCart } from "@/hooks/use-cart"
 import { CreditCard, Shield } from "lucide-react"
 
 export default function CheckoutPage() {
-  const { cart, total, applyCoupon, couponCode, setCouponCode } = useCart()
   const [currentStep, setCurrentStep] = useState(0)
   const [paymentMethod, setPaymentMethod] = useState("credit-card")
   const [paymentDetails, setPaymentDetails] = useState({
@@ -25,6 +24,8 @@ export default function CheckoutPage() {
     { title: "Tickets", description: "Select your tickets" },
     { title: "Payment", description: "Choose payment method" },
   ]
+
+  const { total, applyCoupon, couponCode, setCouponCode } = useCart()
 
   const handleCompletePurchase = () => {
     // Handle purchase completion
@@ -46,7 +47,7 @@ export default function CheckoutPage() {
               <Card>
                 <CardHeader>
                   <CardTitle>Ticket Quantity</CardTitle>
-                  <CardDescription>Choose the number of tickets you'd like to purchase.</CardDescription>
+                  <CardDescription>Choose the number of tickets you&apos;d like to purchase.</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">

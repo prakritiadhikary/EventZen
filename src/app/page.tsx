@@ -83,7 +83,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Featured Events</h2>
-            <p className="text-gray-600 mb-8">Don't miss out on these exciting events happening soon!</p>
+            <p className="text-gray-600 mb-8">Don&apos;t miss out on these exciting events happening soon!</p>
             <Button asChild>
               <Link href="/events">View All Events</Link>
             </Button>
@@ -120,7 +120,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Join the Fun!</h2>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-            Whether you're an organizer or an attendee, we've got events for everyone.
+            Whether you&apos;re an organizer or an attendee, we&apos;ve got events for everyone.
           </p>
           <Button asChild size="lg">
             <Link href="/auth">Get Started</Link>

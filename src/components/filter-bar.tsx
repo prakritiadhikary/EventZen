@@ -14,7 +14,7 @@ interface FilterBarProps {
     date?: string
     type?: string
   }
-  onFiltersChange: (filters: any) => void
+  onFiltersChange: (filters: { search?: string; location?: string; date?: string; type?: string }) => void
   searchTerm: string
   onSearchChange: (term: string) => void
 }

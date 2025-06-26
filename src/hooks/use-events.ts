@@ -1,19 +1,7 @@
 "use client"
 
 import { useState, useEffect, useMemo } from "react"
-
-interface Event {
-  id: number
-  title: string
-  description: string
-  date: string
-  location: string
-  category: string
-  price: number
-  image: string
-  attendees: number
-  isFavorite?: boolean
-}
+import { Event } from "@/types/event"
 
 const mockEvents: Event[] = [
   {

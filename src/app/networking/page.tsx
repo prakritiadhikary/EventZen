@@ -117,7 +117,7 @@ export default function NetworkingPage() {
                       <div className="w-8 h-8 bg-gray-200 rounded"></div>
                       <div>
                         <h4 className="font-medium">Event Feedback</h4>
-                        <p className="text-sm text-gray-500">What do you think about today's event?</p>
+                        <p className="text-sm text-gray-500">What do you think about today&apos;s event?</p>
                       </div>
                     </div>
                     <Button size="sm" className="ml-10">

@@ -7,7 +7,7 @@ import FilterBar from "@/components/filter-bar"
 import { useEvents } from "@/hooks/use-events"
 
 export default function EventsPage() {
-  const { events, filteredEvents, filters, updateFilters, isLoading } = useEvents()
+  const { filteredEvents, filters, updateFilters, isLoading } = useEvents()
   const [searchTerm, setSearchTerm] = useState("")
 
   return (
